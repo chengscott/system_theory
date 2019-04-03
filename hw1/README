@@ -1,0 +1,30 @@
+# HW1
+
+## Install
+
+```shell
+ pip install –r requirements.txt
+ ```
+
+ ## Experiments
+
+```shell
+python3 main.py --runAll
+python3 main.py --algo e-Greedy --param 0 0.01 0.1 0.5 0.99
+python3 main.py --algo UCB --param 0 2 4 6 8
+python3 main.py --algo e-Greedy --nbs 50 100 300 1000
+python3 main.py --algo UCB --nbs 50 100 300 1000
+python3 main.py --algo grad --nbs 50 100 300 1000
+```
+### My Implementation of Plot function
+
+the plot will show in a browser: with additional flags `--yaplot`
+
+```shell
+python3 main.py --runAll --yaplot
+python3 main.py --algo e-Greedy --param 0 0.01 0.1 0.5 0.99 --yaplot
+python3 main.py --algo UCB --param 0 2 4 6 8 --yaplot
+python3 main.py --algo e-Greedy --nbs 50 100 300 1000 --yaplot
+python3 main.py --algo UCB --nbs 50 100 300 1000 --yaplot
+python3 main.py --algo grad --nbs 50 100 300 1000 --yaplot
+```
