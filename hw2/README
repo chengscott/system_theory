@@ -1,0 +1,25 @@
+# HW2
+
+## Install
+
+```shell
+ pip install –r requirements.txt
+ ```
+
+ ## Experiments
+
+ ```shell
+python3 main.py --runAll
+python3 main.py -algo q_learning -alpha 0.1 0.3 0.5 0.7 0.9
+python3 main.py -algo sarsa -alpha 0.1 0.3 0.5 0.7 0.9
+```
+
+### My Implementation of Plot function
+
+the plot will show in a browser: with additional flags `--yaplot`
+
+ ```shell
+python3 main.py --runAll --yaplot
+python3 main.py -algo q_learning -alpha 0.1 0.3 0.5 0.7 0.9 --yaplot
+python3 main.py -algo sarsa -alpha 0.1 0.3 0.5 0.7 0.9 --yaplot
+```
